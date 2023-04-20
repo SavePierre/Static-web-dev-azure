@@ -5,7 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  
+    <style>
+    /* Appliquer la couleur de départ au texte */
+    .mon-texte {
+      color: rgb(255, 0, 0); /* Rouge */
+      animation: changerCouleur 3s infinite;
+    }
+
+    /* Définir l'animation */
+    @keyframes changerCouleur {
+      0% {
+        color: rgb(255, 0, 0); /* Rouge */
+      }
+      50% {
+        color: rgb(0, 255, 0); /* Vert */
+      }
+      100% {
+        color: rgb(0, 0, 255); /* Bleu */
+      }
+    }
+  </style>
+  
+  <title class="mon-texte">Vanilla JavaScript App</title>
 </head>
 
 <body>
